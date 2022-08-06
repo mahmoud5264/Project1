@@ -1,0 +1,19 @@
+.photodiv{
+    background-image: url('https://img-c.udemycdn.com/notices/web_banner/slide_1_image_udlite/b8f46419-eca3-44c1-8ba0-ed2ca89f8884.jpg');
+    width:1300px;
+    height: 350px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.childhome{
+    padding: 0 20px 0 20px;
+    width:400px;
+    height: 150px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+h3{
+    font-weight: normal;
+}
