@@ -3,26 +3,51 @@ body{
     margin:0;
 }
 
+
+header,main{
+    max-width: 2000px;
+    margin: auto;
+}
+
 header{
     margin-top: 100px;
 }
 
 .photodiv{
-    background-image: url('https://img-c.udemycdn.com/notices/web_banner/slide_1_image_udlite/b8f46419-eca3-44c1-8ba0-ed2ca89f8884.jpg');
-    width:1350px;
+    background-image:url('gray.jpg');
+    width:90%;
     height: 350px;
     margin: 0 auto;
-    padding-top: 50px;
     padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap:20%;
+    flex:1;
 }
 
-.childhome{
+
+
+.photo{
+    margin-top: 2%;
+    width: 30%;
+    height: 80%;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+}
+
+.childhome{ 
     padding: 2px 0 0 20px;
-    width:400px;
-    height: 150px;
+    margin-top: 50px;
+    width:30em;
+    height: 10em;
     background-color: white;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 }
+
 h1,h2,h3,h4,h5{
     font-family: sans-serif;
 }
@@ -38,20 +63,32 @@ nav{
     width: 100%;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
     display: flex;
+    padding-left: 10px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: white;
+    gap: 10px;
+}
+
+.cart,.lang,.log,.cat{
+    flex: 1;
+}
+.cat{
+    margin-right: 10px;
 }
 
 
-
 nav div{
+    flex:2;
     display: block;
-    width: 150px;
     height: 45px;
     text-align: center;
-    text-decoration:none;
+    color: black;
+}
+
+nav a{
+    text-decoration: none;
     color: black;
 }
 
@@ -61,12 +98,12 @@ nav div{
 
 
 .form{
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0,0,0.6);
     border-radius: 60px;
     padding-top: 12px;
     height: 35px;
     margin-top: 0;
-    width: 700px;
+    flex: 10;
     background-color:#f7f9fa ;
 }
 input[type="text"]{
@@ -84,9 +121,23 @@ input[type="text"]{
     margin: auto;
 }
 
+.main a{
+    font-family: sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    padding-right: 15px;
+}
+
+.main a:first-of-type{
+    padding-left: 5px;
+    font-weight: bold;
+}
+
 .mainchild{
     border: 1px solid rgba(0,0,0,0.2);
     padding: 10px 0 0 30px;
+    margin-top: 10px;
 
 }
 .mainchild h3{
@@ -94,6 +145,15 @@ input[type="text"]{
     width: 60%;
 }
 
+button:hover{
+    cursor:pointer;
+}
+
+p.light{
+    display: inline;
+    font-weight:100;
+    color: rgba(0, 0,0,0.5);
+}
 
 .mainchild button{
     display: block;
@@ -115,8 +175,13 @@ input[type="text"]{
     gap: 15px;
 }
 
-.courses div{
+.courses span{
+    color:goldenrod;
+}
+
+.courses div,.courses div img{
     width: 250px;
+    min-width: 19%;
 }
 
 
@@ -135,14 +200,8 @@ button[type="submit"]{
     border: none;
 }
 
-
-.cart,.lang{
-    padding-bottom: 10px;
-}
-
 .notpad{
     padding-top: 10px;
-    width: 100px;
 }
 
 .navbutton{
@@ -152,11 +211,94 @@ button[type="submit"]{
     width: 75px;
     height: 35px;
     background-color: white;
+    border: 1px solid rgba(0, 0,0,0.8);
     color: black;
 }
 
 .black{
     background-color: black;
     color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+.logo{
+    height: 77%;
+}
+
+@media screen and (max-width:1500px){
+    .seen1{
+        display: none;
+    }
+    .courses div,.courses div img{
+        width: 225px;
+    }
+    .photodiv{
+        gap: 10%;
+    }
+}
+
+
+@media screen and (max-width:1200px){
+    .seen2{
+        display: none;
+    }
+    .courses div,.courses div img{
+        width: 275px;
+    }
+}
+@media screen and (max-width:1000px){
+    .photodiv{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0;
+        gap:0;
+    }
+    .seen{
+        display: none;
+    }
+    .hidden{
+        display: block;
+    }
+    nav{
+        justify-content: center;
+        padding-left: 0;
+    }
+    .cart{
+        flex: 3;
+    }
+    .courses{
+        flex-direction: column;
+        align-content: center;
+    }
+    .courses div{
+        border-bottom: 1px solid black;
+    }
+    .courses div:last-child{
+        border: none;
+    }
+
+    .udemy{
+        flex:15;
+        padding-left: 15%;
+    }
+
+    .courses div,.courses div img{
+        
+        max-width: 275px;
+    }
+    .childhome{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        box-shadow: unset;
+    }
+    .photo{
+        width: 25%;
+        min-width: 200px;
+        height: 50%;
+    }
 }
 
