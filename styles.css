@@ -26,7 +26,10 @@ header{
     flex:1;
 }
 
-
+.carticon{
+    width: 25px;
+    padding-top: 5%;
+}
 
 .photo{
     margin-top: 2%;
