@@ -1,0 +1,118 @@
+
+main{
+    max-width: 2000px;
+    margin: auto;
+}
+
+
+
+.main{
+    width: 90%;
+    margin: auto;
+}
+
+.main a{
+    font-family: sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    padding-right: 15px;
+}
+
+.main a:first-of-type{
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.mainchild{
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 10px 0 0 30px;
+    margin-top: 10px;
+
+}
+.mainchild h3{
+    display: block;
+    width: 60%;
+}
+
+
+
+p.light{
+    display: inline;
+    font-weight:100;
+    color: rgba(0, 0,0,0.5);
+}
+
+.mainchild button{
+    display: block;
+    height: 40px;
+    width: 100px;
+    padding: 0;
+    margin-bottom: 20px;
+    border-width: 1px;
+    background-color: white;
+}
+.mainchild button:hover{
+    background-color: rgba(220, 220,220,0.5);
+}
+
+.courses{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.courses span{
+    color:goldenrod;
+}
+
+.courses div,.courses div img{
+    width: 250px;
+    min-width: 19%;
+}
+
+
+h3.bold{
+    font-weight: bold;
+    width: 100%;
+}
+
+
+
+@media screen and (max-width:1500px){
+    .courses div,.courses div img{
+        width: 225px;
+    }
+    .photodiv{
+        gap: 10%;
+    }
+}
+
+
+@media screen and (max-width:1200px){
+    .courses div,.courses div img{
+        width: 275px;
+    }
+}
+
+@media screen and (max-width:1000px){
+  
+   
+    .courses{
+        flex-direction: column;
+        align-content: center;
+    }
+    .courses div{
+        border-bottom: 1px solid black;
+    }
+    .courses div:last-child{
+        border: none;
+    }
+
+
+    .courses div,.courses div img{
+        
+        max-width: 275px;
+    }
+}
