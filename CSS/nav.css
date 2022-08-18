@@ -33,6 +33,7 @@ nav div{
     height: 45px;
     text-align: center;
     color: black;
+    margin-bottom: 5px;
 }
 
 nav a{
@@ -40,16 +41,25 @@ nav a{
     color: black;
 }
 
-.pad{
-    padding-top: 25px;
+nav a{
+    font-family: serif;
 }
+
+nav a:hover{
+    color: black;
+}
+
+.pad{
+    padding-top: 12px;
+}
+
 
 
 .form{
     border: 1px solid rgba(0, 0,0,0.6);
     border-radius: 60px;
-    padding-top: 12px;
-    height: 35px;
+    padding-top: 7px;
+    height: 45px;
     margin-top: 0;
     flex: 10;
     background-color:#f7f9fa ;
@@ -97,8 +107,9 @@ button[type="submit"]{
 }
 
 .logo{
-    height: 77%;
+    height: 95%;
 }
+
 .carticon{
     width: 25px;
     padding-top: 5%;

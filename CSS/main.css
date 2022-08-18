@@ -4,10 +4,8 @@ main{
     margin: auto;
 }
 
-
-
 .main{
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
 
@@ -19,22 +17,16 @@ main{
     padding-right: 15px;
 }
 
-.main a:first-of-type{
-    padding-left: 5px;
-    font-weight: bold;
-}
-
 .mainchild{
     border: 1px solid rgba(0,0,0,0.2);
-    padding: 10px 0 0 30px;
+    padding: 25px;
     margin-top: 10px;
-
 }
+
 .mainchild h3{
     display: block;
-    width: 60%;
+    width: 75%;
 }
-
 
 
 p.light{
@@ -56,24 +48,8 @@ p.light{
     background-color: rgba(220, 220,220,0.5);
 }
 
-.courses{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    gap: 15px;
-}
-
 .courses span{
     color:goldenrod;
-}
-
-.courses div,.courses div img{
-    width: 250px;
-    min-width: 19%;
-}
-
-.courses div img{
-    border: 1px solid rgba(0, 0,0,0.2);
 }
 
 h3.bold{
@@ -81,41 +57,76 @@ h3.bold{
     width: 100%;
 }
 
+.top-categories img{
+    margin-bottom: 20px;
+    width: 20vw;
+    height: 20vw;
+    border: 5px solid white;
+    cursor: pointer;
+}
+
+.top-categories img:hover{
+    border: none;
+}
+
+.mainchild{
+    overflow: hidden;
+}
+
+.courses img{
+    width: 14vw;
+    height: 10vw;
+}
+
+.nav-tabs,.nav-link{
+    border: 0 !important;
+    color:gray !important;
+    font-weight: bolder;
+}
+
+.nav-link:hover,.active{
+    color: black !important;
+}
 
 
 @media screen and (max-width:1500px){
-    .courses div,.courses div img{
-        width: 225px;
-    }
     .photodiv{
         gap: 10%;
     }
+    
 }
 
 
-@media screen and (max-width:1200px){
-    .courses div,.courses div img{
-        width: 275px;
+@media screen and (max-width:991px){
+    .mainchild h2,.mainchild h3,.mainchild a{
+        margin-left: 10px;
+    }
+    .mainchild{
+        padding-left: 0;
+    }
+
+    .top-categories img{
+        width: 25vw;
+        height: 25vw;
+    }
+    
+    .courses img{
+        height: 18vw;   
     }
 }
-
-@media screen and (max-width:1000px){
-  
-   
+@media screen and (max-width:767px){
+    
+    .top-categories{
+        text-align: center;        
+    }
+    .top-categories img{
+        width: 50vw;
+        height: 50vw;
+    }
+    .courses img{
+        height: 30vw;
+    }
     .courses{
-        flex-direction: column;
-        align-content: center;
-    }
-    .courses div{
-        border-bottom: 1px solid black;
-    }
-    .courses div:last-child{
-        border: none;
-    }
-
-
-    .courses div,.courses div img{
-        
-        max-width: 275px;
+        padding-left: 5%;
     }
 }
