@@ -12,6 +12,7 @@ nav{
     align-items: center;
     background-color: white;
     gap: 10px;
+    z-index: 1;
 }
 
 

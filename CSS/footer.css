@@ -1,0 +1,40 @@
+footer{
+    max-width: 2000px;
+    margin: auto;
+}
+
+.footer{
+    width: 85%;
+    margin: auto;
+}
+
+.top-categories img {
+  margin-bottom: 20px;
+  width: 20vw;
+  height: 20vw;
+  max-width: 20rem;
+  max-height: 20rem;
+  border: 5px solid white;
+  cursor: pointer;
+}
+
+.top-categories img:hover {
+  border: none;
+}
+
+@media screen and (max-width: 991px) {
+  .top-categories img {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .top-categories {
+    text-align: center;
+  }
+  .top-categories img {
+    width: 50vw;
+    height: 50vw;
+  }
+}
